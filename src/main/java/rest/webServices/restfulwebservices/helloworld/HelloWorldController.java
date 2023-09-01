@@ -12,14 +12,14 @@ public class HelloWorldController {
         return "Hello World";
     }
     @GetMapping(path = "/hello-world-bean")
-    public helloWorldBean helloWorldBean(){
-        return  new helloWorldBean("Hello World");
+    public HelloWorldBean HelloWorldBean(){
+        return  new HelloWorldBean("Hello World");
     }
 
     @GetMapping(path = "/hello-world/path-variable/{name}") //path parameters /users/1/path-variable/{name}
-    public helloWorldBean helloWorlPathVariable(@PathVariable String name){
-//        return  new helloWorldBean("Hello World" + name);
-        return new helloWorldBean(String.format("Hello World, %s",name));
+    public HelloWorldBean helloWorlPathVariable(@PathVariable String name){
+//        return  new HelloWorldBean("Hello World" + name);
+        return new HelloWorldBean(String.format("Hello World, %s",name));
     }
 
 }

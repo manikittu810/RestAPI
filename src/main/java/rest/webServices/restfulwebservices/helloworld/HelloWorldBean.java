@@ -1,6 +1,6 @@
 package rest.webServices.restfulwebservices.helloworld;
 
-public class helloWorldBean {
+public class HelloWorldBean {
     private String message;
 
     public String getMessage() {
@@ -18,7 +18,7 @@ public class helloWorldBean {
         this.message = message;
     }
 
-    public helloWorldBean(String message) {
+    public HelloWorldBean(String message) {
         this.message=message;
     }
 }
